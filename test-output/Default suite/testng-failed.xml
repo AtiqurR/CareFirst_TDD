@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crtAnAccountTest.CreateAccountTest">
+      <class name="com.instagramPageTest.InstagramLogInTest">
         <methods>
-          <include name="createAccountTest"/>
           <include name="setUp"/>
+          <include name="instagramLogInTest1"/>
           <include name="tearUp"/>
         </methods>
-      </class> <!-- com.crtAnAccountTest.CreateAccountTest -->
+      </class> <!-- com.instagramPageTest.InstagramLogInTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

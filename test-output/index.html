@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.crtAnAccountTest.CreateAccountTest" class="method navigator-link" hash-for-method="createAccountTest">createAccountTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,6 +102,16 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.crtAnAccountTest.CreateAccountTest" class="method navigator-link" hash-for-method="createAccountTest">createAccountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.instagramPageTest.InstagramLogInTest" class="method navigator-link" hash-for-method="instagramLogInTest1(com.instagramLogInData.LogInData@4b6d92e)">instagramLogInTest1(com.instagramLogInData.LogInData@4b6d92e)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.registerTest.RegisterTest" class="method navigator-link" hash-for-method="registerTest">registerTest</a> <!-- method navigator-link -->
@@ -133,9 +129,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.crtAnAccountTest.CreateAccountTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -144,20 +140,10 @@
                   <a name="createAccountTest">
                   </a> <!-- createAccountTest -->
                   <span class="method-name">createAccountTest</span>
-                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
-	Multi-catch parameters are not allowed for source level below 1.7
-
-	at com.commonPackage.CommonMethods.writeText(CommonMethods.java:43)
-	at com.webPages.CreateAccountPage.memberIdStep(CreateAccountPage.java:68)
-	at com.webPages.CreateAccountPage.accountSteps(CreateAccountPage.java:106)
-	at com.crtAnAccountTest.CreateAccountTest.createAccountTest(CreateAccountTest.java:11)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -169,6 +155,22 @@
                   <a name="registerTest">
                   </a> <!-- registerTest -->
                   <span class="method-name">registerTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.instagramPageTest.InstagramLogInTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="instagramLogInTest1(com.instagramLogInData.LogInData@4b6d92e)">
+                  </a> <!-- instagramLogInTest1(com.instagramLogInData.LogInData@4b6d92e) -->
+                  <span class="method-name">instagramLogInTest1</span>
+                  <span class="parameters">(com.instagramLogInData.LogInData@4b6d92e)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,6 +189,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.registerTest.RegisterTest&quot;/&gt;
       &lt;class name=&quot;com.crtAnAccountTest.CreateAccountTest&quot;/&gt;
+      &lt;class name=&quot;com.instagramPageTest.InstagramLogInTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -200,7 +203,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -226,20 +229,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'registerTest')
 data.setCell(0, 2, 'com.registerTest.RegisterTest')
-data.setCell(0, 3, 4507);
+data.setCell(0, 3, 5728);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createAccountTest')
 data.setCell(1, 2, 'com.crtAnAccountTest.CreateAccountTest')
-data.setCell(1, 3, 3406);
+data.setCell(1, 3, 5199);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'instagramLogInTest1')
+data.setCell(2, 2, 'com.instagramPageTest.InstagramLogInTest')
+data.setCell(2, 3, 5192);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -254,15 +261,36 @@ return data;
               <span class="reporter-method-name">createAccountTest</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Actual value : Let's Create Your Account -------- Expected value : Let's Create Your Account</span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[@id='memberId']]Text Value EnteredAbc1100damn</span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[contains(@id,'datepicker')]]Text Value Entered01121994</span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[@id='zipCode']]Text Value Entered10472</span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[@id='ssnOrTaxID']]Text Value Entered8080</span>
+                <span class="reporter-method-output">Scrolling down 0 to 250 pixels</span>
+                <span class="reporter-method-output">Scrolling up 250 to 0 pixel</span>
+                <span class="reporter-method-output">Scrolling up 250 to 0 pixel</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">instagramLogInTest1(com.instagramLogInData.LogInData@4b6d92e)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (4853722f270b18ed84548906502ef292)] -> xpath: (//input[@class='_2hvTZ pexuQ zyHYP'])[1]]Text Value Entered_____anik_____</span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (4853722f270b18ed84548906502ef292)] -> xpath: //input[@name='password']]Text Value Entered1100</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.instagramPageTest.InstagramLogInTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">instagramLogInTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -278,28 +306,41 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">registerTest</span>
-                <span class="method-start">7111 ms</span>
+                <span class="method-start">4525 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearUp</span>
-                <span class="method-start">11621 ms</span>
+                <span class="method-start">10258 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crtAnAccountTest.CreateAccountTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">11783 ms</span>
+                <span class="method-start">10474 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">createAccountTest</span>
-                <span class="method-start">15784 ms</span>
+                <span class="method-start">13978 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearUp</span>
-                <span class="method-start">19191 ms</span>
+                <span class="method-start">19178 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.instagramPageTest.InstagramLogInTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">19386 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">instagramLogInTest1(com.instagramLogInData.LogInData@4b6d92e)</span>
+                <span class="method-start">23122 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearUp</span>
+                <span class="method-start">28317 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

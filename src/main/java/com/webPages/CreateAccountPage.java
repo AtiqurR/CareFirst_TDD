@@ -16,8 +16,6 @@ public class CreateAccountPage {
 
 	@FindBy(xpath = "(//button[contains('aria-label','')])[4]")
 	public WebElement popUpElement;
-	@FindBy(className = "//a[text()='OK']")
-	public WebElement okkk;
 	@FindBy(xpath = "//button[text()='Log In or Register']")
 	public WebElement registerButton;
 	@FindBy(xpath = "//a[text()='Not Yet Registered?']")

@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import com.BaseClass.BaseClass;
+import com.instagramLogInData.LogInData;
 
 public class InstagramPage {
 
@@ -14,15 +15,43 @@ public class InstagramPage {
 		PageFactory.initElements(driver, this);
 	}
 
+
+	@FindBy(xpath = "(//button[contains('aria-label','')])[4]")
+	public WebElement popUpElement;
+	@FindBy(xpath = "//button[text()='Log In or Register']")
+	public WebElement registerButton;
+	@FindBy(xpath = "//a[text()='Not Yet Registered?']")
+	public WebElement notYetRegister;
+	@FindBy(xpath = "(//p[@class=' mb-2 font-weight-bold  color-black'])[2]")
+	public WebElement individualButton;
 	@FindBy(xpath = "//div[@class='social-links']//child::a[5]")
 	public WebElement instaElement;
-	@FindBy(xpath = "//*[@name='username']")
+	@FindBy(xpath = "(//input[@class='_2hvTZ pexuQ zyHYP'])[1]")
 	public WebElement userName;
 	@FindBy(xpath = "//input[@name='password']")
 	public WebElement passWord;
 	@FindBy(linkText = "Sign up")
 	public WebElement signUp;
 
+	
+	private void popUp() {
+		BaseClass.cm.clickMethod(popUpElement);
+	}
+	
+	public void registerButtonMethod(WebDriver driver) {
+		BaseClass.wait.until(ExpectedConditions.elementToBeClickable(registerButton));
+		BaseClass.cm.clickMethod(registerButton);
+	}
+
+	public void notYetRegisterButton(WebDriver driver) {
+
+		BaseClass.wait.until(ExpectedConditions.elementToBeClickable(notYetRegister));
+		BaseClass.cm.clickMethod(notYetRegister);
+	}
+
+	public void individualButtonMethod() {
+		BaseClass.cm.clickMethod(individualButton);
+	}
 	public void instaPage() {
 		BaseClass.js.executeScript("arguments[0].scrollIntoView(true)", instaElement);
 		BaseClass.cm.clickMethod(instaElement);
@@ -50,9 +79,23 @@ public class InstagramPage {
 	}
 
 	public void instaPageSteps(String userNameInput, String passwordInput, WebDriver driver) {
+		popUp();
+		registerButtonMethod(driver);
+		notYetRegisterButton(driver);
+		individualButtonMethod();
 		instaPage();
 		userNamestep(userNameInput, driver);
 		passwordStep(passwordInput);
+		signUpStep(driver);
+	}
+	public void instaPageStepData(WebDriver driver, LogInData Data ){
+		popUp();
+		registerButtonMethod(driver);
+		notYetRegisterButton(driver);
+		individualButtonMethod();
+		instaPage();
+		userNamestep(Data.getUserName(), driver);
+		passwordStep(Data.getPassWord());
 		signUpStep(driver);
 	}
 }

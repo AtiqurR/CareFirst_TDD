@@ -40,7 +40,7 @@ public class CommonMethods {
 			BaseClass.waits.waitUntilClickAble(element);
 			element.sendKeys(value);
 			careFirst.qa.reporting.Logger.log(element + "Text Value Entered" + value);
-		} catch (NullPointerException | NoSuchElementException e) {
+		} catch (NoSuchElementException e) {
 			e.printStackTrace();
 			Assert.fail();
 		}
