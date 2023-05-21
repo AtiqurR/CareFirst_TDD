@@ -1,116 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+<testng-results ignored="1" total="4" passed="0" failed="3" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Actual value : Let's Create Your Account -------- Expected value : Let's Create Your Account]]>
+      <![CDATA[My os version is: Windows 10]]>
     </line>
     <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[@id='memberId']]Text Value EnteredAbc1100damn]]>
+      <![CDATA[My os version is: Windows 10]]>
     </line>
     <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[contains(@id,'datepicker')]]Text Value Entered01121994]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[@id='zipCode']]Text Value Entered10472]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[@id='ssnOrTaxID']]Text Value Entered8080]]>
-    </line>
-    <line>
-      <![CDATA[Scrolling down 0 to 250 pixels]]>
-    </line>
-    <line>
-      <![CDATA[Scrolling up 250 to 0 pixel]]>
-    </line>
-    <line>
-      <![CDATA[Scrolling up 250 to 0 pixel]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (4853722f270b18ed84548906502ef292)] -> xpath: (//input[@class='_2hvTZ pexuQ zyHYP'])[1]]Text Value Entered_____anik_____]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (4853722f270b18ed84548906502ef292)] -> xpath: //input[@name='password']]Text Value Entered1100]]>
+      <![CDATA[My os version is: Windows 10]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-02-14T20:04:11 EST" name="Suite" finished-at="2022-02-14T20:04:39 EST" duration-ms="28641">
+  <suite started-at="2023-05-20T22:42:27 CDT" name="Suite" finished-at="2023-05-20T22:43:58 CDT" duration-ms="90489">
     <groups>
     </groups>
-    <test started-at="2022-02-14T20:04:11 EST" name="Test" finished-at="2022-02-14T20:04:39 EST" duration-ms="28641">
+    <test started-at="2023-05-20T22:42:27 CDT" name="Test" finished-at="2023-05-20T22:43:58 CDT" duration-ms="90489">
       <class name="com.instagramPageTest.InstagramLogInTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.instagramPageTest.InstagramLogInTest@12aba8be]" started-at="2022-02-14T20:04:30 EST" name="setUp" finished-at="2022-02-14T20:04:34 EST" duration-ms="3736" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="instagramLogInTest1(com.instagramLogInData.LogInData)[pri:0, instance:com.instagramPageTest.InstagramLogInTest@12aba8be]" started-at="2022-02-14T20:04:34 EST" name="instagramLogInTest1" data-provider="LogInData" finished-at="2022-02-14T20:04:39 EST" duration-ms="5192" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.instagramPageTest.InstagramLogInTest@82de64a]" started-at="2023-05-20T22:43:30 CDT" name="setUp" finished-at="2023-05-20T22:43:47 CDT" duration-ms="17333" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.instagramLogInData.LogInData@4b6d92e]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (4853722f270b18ed84548906502ef292)] -> xpath: (//input[@class='_2hvTZ pexuQ zyHYP'])[1]]Text Value Entered_____anik_____]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (4853722f270b18ed84548906502ef292)] -> xpath: //input[@name='password']]Text Value Entered1100]]>
+              <![CDATA[My os version is: Windows 10]]>
             </line>
           </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="instagramLogInTest1(com.instagramLogInData.LogInData)[pri:0, instance:com.instagramPageTest.InstagramLogInTest@82de64a]" started-at="2023-05-20T22:43:47 CDT" name="instagramLogInTest1" data-provider="LogInData" finished-at="2023-05-20T22:43:58 CDT" duration-ms="10233" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.instagramLogInData.LogInData@70211df5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (b85a84fb88396ea09adf531f832bbff7)] -> xpath: (//button[contains('aria-label','')])[4]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANIK', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Anik\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b85a84fb88396ea09adf531f832bbff7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (b85a84fb88396ea09adf531f832bbff7)] -> xpath: (//button[contains('aria-label','')])[4]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANIK', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Anik\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b85a84fb88396ea09adf531f832bbff7
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.commonPackage.CommonMethods.clickMethod(CommonMethods.java:17)
+at com.webPages.InstagramPage.popUp(InstagramPage.java:40)
+at com.webPages.InstagramPage.instaPageStepData(InstagramPage.java:98)
+at com.instagramPageTest.InstagramLogInTest.instagramLogInTest1(InstagramLogInTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- instagramLogInTest1 -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.instagramPageTest.InstagramLogInTest@12aba8be]" started-at="2022-02-14T20:04:39 EST" name="tearUp" finished-at="2022-02-14T20:04:39 EST" duration-ms="289" status="PASS">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.instagramPageTest.InstagramLogInTest@82de64a]" started-at="2023-05-20T22:43:58 CDT" name="tearUp" finished-at="2023-05-20T22:43:58 CDT" duration-ms="165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
       </class> <!-- com.instagramPageTest.InstagramLogInTest -->
       <class name="com.registerTest.RegisterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.registerTest.RegisterTest@7e7be63f]" started-at="2022-02-14T20:04:11 EST" name="setUp" finished-at="2022-02-14T20:04:15 EST" duration-ms="4523" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.registerTest.RegisterTest@18d87d80]" started-at="2023-05-20T22:42:27 CDT" name="setUp" finished-at="2023-05-20T22:42:46 CDT" duration-ms="18150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[My os version is: Windows 10]]>
+            </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registerTest()[pri:0, instance:com.registerTest.RegisterTest@7e7be63f]" started-at="2022-02-14T20:04:15 EST" name="registerTest" finished-at="2022-02-14T20:04:21 EST" duration-ms="5728" status="PASS">
+        <test-method signature="registerTest()[pri:0, instance:com.registerTest.RegisterTest@18d87d80]" started-at="2023-05-20T22:42:46 CDT" name="registerTest" finished-at="2023-05-20T22:42:58 CDT" duration-ms="12794" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (ecff78a1494d5da7947bf741dde8c40b)] -> xpath: (//button[contains('aria-label','')])[4]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANIK', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Anik\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51441}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ecff78a1494d5da7947bf741dde8c40b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (ecff78a1494d5da7947bf741dde8c40b)] -> xpath: (//button[contains('aria-label','')])[4]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANIK', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Anik\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51441}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ecff78a1494d5da7947bf741dde8c40b
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.commonPackage.CommonMethods.clickMethod(CommonMethods.java:17)
+at com.webPages.MainPage.adPopUpMethod(MainPage.java:28)
+at com.webPages.MainPage.registerSteps(MainPage.java:47)
+at com.registerTest.RegisterTest.registerTest(RegisterTest.java:12)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.registerTest.RegisterTest@7e7be63f]" started-at="2022-02-14T20:04:21 EST" name="tearUp" finished-at="2022-02-14T20:04:21 EST" duration-ms="211" status="PASS">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.registerTest.RegisterTest@18d87d80]" started-at="2023-05-20T22:42:58 CDT" name="tearUp" finished-at="2023-05-20T22:42:58 CDT" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
       </class> <!-- com.registerTest.RegisterTest -->
       <class name="com.crtAnAccountTest.CreateAccountTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.crtAnAccountTest.CreateAccountTest@3cebbb30]" started-at="2022-02-14T20:04:21 EST" name="setUp" finished-at="2022-02-14T20:04:25 EST" duration-ms="3504" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.crtAnAccountTest.CreateAccountTest@27462a88]" started-at="2023-05-20T22:42:58 CDT" name="setUp" finished-at="2023-05-20T22:43:20 CDT" duration-ms="21332" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[My os version is: Windows 10]]>
+            </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="createAccountTest()[pri:0, instance:com.crtAnAccountTest.CreateAccountTest@3cebbb30]" started-at="2022-02-14T20:04:25 EST" name="createAccountTest" finished-at="2022-02-14T20:04:30 EST" duration-ms="5199" status="PASS">
+        <test-method signature="createAccountTest()[pri:0, instance:com.crtAnAccountTest.CreateAccountTest@27462a88]" started-at="2023-05-20T22:43:20 CDT" name="createAccountTest" finished-at="2023-05-20T22:43:30 CDT" duration-ms="10163" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (2b19a8993d7eab76ab05c5049fc66176)] -> xpath: (//button[contains('aria-label','')])[4]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANIK', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Anik\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b19a8993d7eab76ab05c5049fc66176]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (2b19a8993d7eab76ab05c5049fc66176)] -> xpath: (//button[contains('aria-label','')])[4]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANIK', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Anik\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b19a8993d7eab76ab05c5049fc66176
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.commonPackage.CommonMethods.clickMethod(CommonMethods.java:17)
+at com.webPages.CreateAccountPage.popUp(CreateAccountPage.java:43)
+at com.webPages.CreateAccountPage.accountSteps(CreateAccountPage.java:99)
+at com.crtAnAccountTest.CreateAccountTest.createAccountTest(CreateAccountTest.java:11)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
-            <line>
-              <![CDATA[Actual value : Let's Create Your Account -------- Expected value : Let's Create Your Account]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[@id='memberId']]Text Value EnteredAbc1100damn]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[contains(@id,'datepicker')]]Text Value Entered01121994]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[@id='zipCode']]Text Value Entered10472]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[@id='ssnOrTaxID']]Text Value Entered8080]]>
-            </line>
-            <line>
-              <![CDATA[Scrolling down 0 to 250 pixels]]>
-            </line>
-            <line>
-              <![CDATA[Scrolling up 250 to 0 pixel]]>
-            </line>
-            <line>
-              <![CDATA[Scrolling up 250 to 0 pixel]]>
-            </line>
           </reporter-output>
         </test-method> <!-- createAccountTest -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.crtAnAccountTest.CreateAccountTest@3cebbb30]" started-at="2022-02-14T20:04:30 EST" name="tearUp" finished-at="2022-02-14T20:04:30 EST" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.crtAnAccountTest.CreateAccountTest@27462a88]" started-at="2023-05-20T22:43:30 CDT" name="tearUp" finished-at="2023-05-20T22:43:30 CDT" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->

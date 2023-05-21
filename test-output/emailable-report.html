@@ -9,12 +9,51 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">28,641</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">90,489</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.crtAnAccountTest.CreateAccountTest</td><td><a href="#m0">createAccountTest</a></td><td rowspan="1">1644887065319</td><td rowspan="1">5199</td></tr><tr class="passedodd"><td rowspan="1">com.instagramPageTest.InstagramLogInTest</td><td><a href="#m1">instagramLogInTest1</a></td><td rowspan="1">1644887074463</td><td rowspan="1">5192</td></tr><tr class="passedeven"><td rowspan="1">com.registerTest.RegisterTest</td><td><a href="#m2">registerTest</a></td><td rowspan="1">1644887055866</td><td rowspan="1">5728</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.crtAnAccountTest.CreateAccountTest</td><td><a href="#m0">createAccountTest</a></td><td rowspan="1">1684640600284</td><td rowspan="1">10163</td></tr><tr class="failedodd"><td rowspan="1">com.instagramPageTest.InstagramLogInTest</td><td><a href="#m1">instagramLogInTest1</a></td><td rowspan="1">1684640627930</td><td rowspan="1">10233</td></tr><tr class="failedeven"><td rowspan="1">com.registerTest.RegisterTest</td><td><a href="#m2">registerTest</a></td><td rowspan="1">1684640566025</td><td rowspan="1">12794</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.crtAnAccountTest.CreateAccountTest#createAccountTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Actual value : Let's Create Your Account -------- Expected value : Let's Create Your Account<br/>[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[@id='memberId']]Text Value EnteredAbc1100damn<br/>[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[contains(@id,'datepicker')]]Text Value Entered01121994<br/>[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[@id='zipCode']]Text Value Entered10472<br/>[[ChromeDriver: chrome on WINDOWS (bc15358182b53209606f931c23203cb1)] -> xpath: //input[@id='ssnOrTaxID']]Text Value Entered8080<br/>Scrolling down 0 to 250 pixels<br/>Scrolling up 250 to 0 pixel<br/>Scrolling up 250 to 0 pixel</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.instagramPageTest.InstagramLogInTest#instagramLogInTest1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.instagramLogInData.LogInData@4b6d92e</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">[[ChromeDriver: chrome on WINDOWS (4853722f270b18ed84548906502ef292)] -> xpath: (//input[@class='_2hvTZ pexuQ zyHYP'])[1]]Text Value Entered_____anik_____<br/>[[ChromeDriver: chrome on WINDOWS (4853722f270b18ed84548906502ef292)] -> xpath: //input[@name='password']]Text Value Entered1100</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.registerTest.RegisterTest#registerTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.crtAnAccountTest.CreateAccountTest#createAccountTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (2b19a8993d7eab76ab05c5049fc66176)] -&gt; xpath: (//button[contains(&apos;aria-label&apos;,&apos;&apos;)])[4]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ANIK&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Anik\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b19a8993d7eab76ab05c5049fc66176
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.commonPackage.CommonMethods.clickMethod(CommonMethods.java:17)
+	at com.webPages.CreateAccountPage.popUp(CreateAccountPage.java:43)
+	at com.webPages.CreateAccountPage.accountSteps(CreateAccountPage.java:99)
+	at com.crtAnAccountTest.CreateAccountTest.createAccountTest(CreateAccountTest.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.instagramPageTest.InstagramLogInTest#instagramLogInTest1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.instagramLogInData.LogInData@70211df5</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (b85a84fb88396ea09adf531f832bbff7)] -&gt; xpath: (//button[contains(&apos;aria-label&apos;,&apos;&apos;)])[4]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ANIK&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Anik\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b85a84fb88396ea09adf531f832bbff7
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.commonPackage.CommonMethods.clickMethod(CommonMethods.java:17)
+	at com.webPages.InstagramPage.popUp(InstagramPage.java:40)
+	at com.webPages.InstagramPage.instaPageStepData(InstagramPage.java:98)
+	at com.instagramPageTest.InstagramLogInTest.instagramLogInTest1(InstagramLogInTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.registerTest.RegisterTest#registerTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (ecff78a1494d5da7947bf741dde8c40b)] -&gt; xpath: (//button[contains(&apos;aria-label&apos;,&apos;&apos;)])[4]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ANIK&apos;, ip: &apos;192.168.0.109&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Anik\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51441}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ecff78a1494d5da7947bf741dde8c40b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.commonPackage.CommonMethods.clickMethod(CommonMethods.java:17)
+	at com.webPages.MainPage.adPopUpMethod(MainPage.java:28)
+	at com.webPages.MainPage.registerSteps(MainPage.java:47)
+	at com.registerTest.RegisterTest.registerTest(RegisterTest.java:12)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

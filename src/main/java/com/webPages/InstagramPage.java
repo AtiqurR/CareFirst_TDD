@@ -26,7 +26,9 @@ public class InstagramPage {
 	public WebElement individualButton;
 	@FindBy(xpath = "//div[@class='social-links']//child::a[5]")
 	public WebElement instaElement;
-	@FindBy(xpath = "(//input[@class='_2hvTZ pexuQ zyHYP'])[1]")
+	@FindBy(xpath = "//button[@class='sqdOP  L3NKy   y3zKF     ']//parent::a[@class='ENC4C']")
+	public WebElement logInElement;
+	@FindBy(name = "//input[@name='username']")
 	public WebElement userName;
 	@FindBy(xpath = "//input[@name='password']")
 	public WebElement passWord;
@@ -55,6 +57,10 @@ public class InstagramPage {
 	public void instaPage() {
 		BaseClass.js.executeScript("arguments[0].scrollIntoView(true)", instaElement);
 		BaseClass.cm.clickMethod(instaElement);
+	}
+	public void logInStep() {
+		BaseClass.wait.until(ExpectedConditions.elementToBeClickable(logInElement));
+		BaseClass.cm.clickMethod(logInElement);
 	}
 
 	public void userNamestep(String value, WebDriver driver) {
@@ -94,6 +100,7 @@ public class InstagramPage {
 		notYetRegisterButton(driver);
 		individualButtonMethod();
 		instaPage();
+		logInStep();
 		userNamestep(Data.getUserName(), driver);
 		passwordStep(Data.getPassWord());
 		signUpStep(driver);
